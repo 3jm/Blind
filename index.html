@@ -1,0 +1,203 @@
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>&#9825; Love</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="&#9825; Love">
+        <meta property="og:url" content="">
+        <link rel="icon" href="assets/media/icon.png" type="x/icon" sizes="12x12">
+    </head>
+    <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+        <SCRIPT>
+                var Version = navigator.appVersion;
+                var Nom = navigator.appName;
+                var texte = document.title;
+                var width = 30;     
+                var strLen = texte.length;
+                var pos = 1 - width;
+                var time = 250;     
+                
+                Titre();
+                
+                function Titre(){
+                    var scroll = "";
+                    pos++;
+                    if (pos == strLen) pos = 1 - width;
+                    if (pos<0){
+                        for (var i=1; i<=Math.abs(pos); i++) scroll = scroll + " ";
+                        scroll = scroll + texte.substring(0, width - i + 1);
+                        for (var i=scroll.length; i<=width; i++) scroll = scroll + " ";
+                    } else{
+                        scroll = scroll + texte.substring(pos, pos + width);
+                        for (var i=scroll.length; i<=width; i++) scroll = scroll + " ";
+                    }
+                    if (Nom == 'Microsoft Internet Explorer','Mozilla FireFox','Opera','Google Chrome','Safari') {
+                        document.title = scroll;
+                    }
+                    setTimeout("Titre()",time);
+                }
+            </SCRIPT>
+        <style>@font-face { font-family: Road_Rage; src: url(Road_Rage.otf); } @font-face { font-family: derk; src: url(derk.otf); } html { font-family: Uni Sans Heavy; } *, *::after, *::before { box-sizing: inherit; margin: 0; padding: 0; } body { background: #1e272e; } #overlay-toggle { position:absolute; display: none; } .debold{ font-weight:normal } .socials { display: flex; align-items: center; justify-content: center; } .overlay { z-index: 1; background-color: #000; } .overlay label { display: grid; place-items: center; width: 100vw; height: 100vw; color: rgb(255, 255, 255); font-size: 2rem; } .no-hover { display: block; } .hover { display: none; } .fullscreen { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); min-height: 100vh; min-width: 100vw; } .text-content { background: rgba(0, 0, 0, 0); display: grid; place-content: center; text-align: center; color: rgb(255, 255, 255); } .text-content h1 { font-size: 3rem; font-weight: 800; } .text-content p { padding-top: 30px; padding-right: 10px; padding-bottom: 31px; padding-left: 10px; font-size: 1.7rem; font-weight: 500; line-height: 0.0; color: rgb(192, 192, 192); display: flex; } .text-content a { padding-top: 30px; padding-right: 10px; padding-bottom: 31px; padding-left: 10px; font-size: 1.3rem; line-height: 0.0; color: white; display: flex; } #overlay-toggle:checked ~ .overlay { animation-fill-mode: forwards; animation-name: fade, hide; animation-delay: 0s, 600ms; animation-duration: 600ms, 1ms; } #overlay-toggle:checked ~ .overlay label { animation-fill-mode: forwards; animation-name: fade; animation-delay: 0s; animation-duration: 500ms; } @media(hover: hover) { .hover { display: block; } .no-hover { display: none; } } @keyframes fade{ to { opacity: 0; } } @keyframes hide { to { visibility: hidden; } }</style>
+        <main>
+            <script>
+                function audioPlay() {
+                    var audio = document.getElementById("audio");
+                    audio.volume = 0.4;
+                    audio.play()
+                }
+                function videoPlay() {
+                    var video = document.getElementById("video");
+                    video.play()
+                }
+            </script>
+            <input type="checkbox" autocomplete="off" id="overlay-toggle">
+            <div class="overlay fullscreen">
+                <label for="overlay-toggle" onclick="audioPlay();videoPlay()">
+                    <span class="no-hover" style="font-family: Road_Rage; font-size: 0.6em;">tap to enter</span>
+                    <span class="hover" style="font-family: Road_Rage; font-size: 0.6em;">click to enter</span>
+                </label>
+            </div>
+            <audio loop="" preload="auto" id="audio">
+                <source src="assets/audio/audio.mp3" type="audio/mp3">
+            </audio>
+            <video loop="" playsinline="" preload="auto" class="fullscreen bg-video" id="video">
+                <source src="assets/media/hi.mp4" type="video/mp4">
+            </video>
+            <section class="fullscreen text-content">
+                <h1 style="font-family: Road_Rage; text-shadow: 0 0 0.20em #bababa;">Blind</h1>
+                <style>body { background-color:#333; } .output { text-align:center; font-family: 'Source Code Pro', monospace; color:white; h1 { font-size:30px; } } /* Cursor Styling */ .cursor::after { content:''; display:inline-block; margin-left:3px; background-color:white; animation-name:blink; animation-duration:0.5s; animation-iteration-count: infinite; } h1.cursor::after { height:24px; width:13px; } p.cursor::after { height:13px; width:6px; } @keyframes blink { 0% { opacity:1; } 49% { opacity:1; } 50% { opacity:0; } 100% { opacity:0; } }</style>
+                <style type="text/css">
+
+body {
+	font-family: monospace;
+}
+
+#container {
+	margin: -5px 0 -90px 0;
+	text-align: center;
+}
+
+#text {
+	display: inline-block;
+	color: white;
+}
+
+</style>
+                <div id="container">
+	<div id="text"></div>
+                    <p></p>
+</div>
+                <script type="text/javascript">
+// List of sentences
+var _CONTENT = [ "Blind Loves You <3", "Don't ask to compare funds. You will win.", "No reply = Sleep / School / Busy / AFK", "My only account is Blind#9999", "Don't fall for impersonators!", "Contact info below :)" ];
+
+// Current sentence being processed
+var _PART = 0;
+
+// ChaBlindter number of the current sentence being processed 
+var _PART_INDEX = 0;
+
+// Holds the handle returned from setInterval
+var _INTERVAL_VAL;
+
+// Element that holds the text
+var _ELEMENT = document.querySelector("#text");
+
+// Implements typing effect
+function Type() { 
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX++;
+
+	// If full sentence has been displayed then start to delete the sentence after some time
+	if(text === _CONTENT[_PART]) {
+		clearInterval(_INTERVAL_VAL);
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Delete, 50);
+		}, 1000);
+	}
+}
+
+// Implements deleting effect
+function Delete() {
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX--;
+
+	// If sentence has been deleted then start to display the next sentence
+	if(text === '') {
+		clearInterval(_INTERVAL_VAL);
+
+		// If last sentence then display the first one, else move to the next
+		if(_PART == (_CONTENT.length - 1))
+			_PART = 0;
+		else
+			_PART++;
+		_PART_INDEX = 0;
+
+		// Start to display the next sentence after some time
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Type, 100);
+		}, 200);
+	}
+}
+
+// Start the typing effect on load
+_INTERVAL_VAL = setInterval(Type, 100);
+
+</script>
+
+                <div class="socials">
+                    <a href="https://tiktok.com/@awxe/" target="_blank" style="text-decoration:none; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;">TikTok</a>
+                    |
+                    <a href="https://t.me/ovodos" target="_blank" style="text-decoration:none; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;">Telegram</a>
+                    |
+                    <a href="https://ogusers.com/belu" target="_blank" style="text-decoration:none; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;">OGU</a>
+                    |
+                    <a href="https://instagram.com/korrey2evil/" target="_blank" style="text-decoration:none; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;">Instagram</a>
+            </div>
+                <style>
+                .activity { display: flex; align-items: center; justify-content: center; font-family: derk; src: url(derk.otf); }
+                </style>
+                <div class="activity">
+                    <a href="logs.html">Activity Logs</a>
+                </div>
+            </section>
+        </main>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+$(document).keypress("u",function(e) {
+  if(e.ctrlKey)
+  {
+return false;
+}
+else
+{
+return true;
+}
+});
+</script>
+<script>
+if (devtools.isOpen) {
+while (true) {
+    console.log("access denied")
+}
+}        
+</script>
+<style> img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] { display: none;} </style>
+</body>
+</html>

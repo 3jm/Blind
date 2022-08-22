@@ -1,0 +1,14 @@
+* {
+    background-color: black;
+}
+@font-face { font-family: derk; src: url(derk.otf); }
+h1 {
+    font-family: derk; src: url(derk.otf);
+    text-align: center;
+    margin-top: 250px;
+    color: white;
+}
+h3 {
+    color: white;
+    text-align: center;
+}
